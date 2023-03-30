@@ -1,12 +1,11 @@
 {
-  "name": "upinside/fsphp",
-  "description": "Formação Full Stack PHP Developer",
+  "name": "marcondesjr/fullstackphp",
+  "description": "Formação Fullstack PHP Developer",
   "minimum-stability": "stable",
   "authors": [
     {
-      "name": "Robson V. Leite",
-      "email": "cursos@upinside.com.br",
-      "homepage": "https://www.upinside.com.br",
+      "name": "Marcondes N. C. Junior",
+      "email": "marcondestecinfo@gmail.com",
       "role": "Developer"
     }
   ],
@@ -23,13 +22,13 @@
     ]
   },
   "require": {
-    "php": "^7.1",
-    "ext-pdo": "^7.1",
-    "phpmailer/phpmailer": "~6.0",
-    "league/plates": "v4.0.0-alpha",
-    "coffeecode/uploader": "^1.0",
-    "coffeecode/cropper": "^1.0",
-    "coffeecode/optimizer": "^1.0",
-    "coffeecode/paginator": "^1.0"
+    "php": "8.2.*",
+    "ext-pdo": "8.2.*",
+    "phpmailer/phpmailer": "^6.8.0",
+    "league/plates" : "v3.5.0",
+    "coffeecode/uploader": "2.0.*",
+    "coffeecode/cropper": "2.0.*",
+    "coffeecode/optimizer": "2.1.*",
+    "coffeecode/paginator": "2.0.*"
   }
 }
