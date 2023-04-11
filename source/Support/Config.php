@@ -10,8 +10,8 @@ define("CONF_DB_NAME", "fullstackphp");
 /**
  * PROJECT URLs
  */
-define("CONF_URL_BASE", "https://www.localhost/phptest/fsphplib");
-define("CONF_URL_ADMIN", CONF_URL_BASE . "/admin");
+define("CONF_URL_BASE", "http://localhost:8888/Fullstack_PHP_MVC");
+define("CONF_URL_ADMIN", "/admin");
 
 /**
  * SITE
@@ -23,13 +23,11 @@ define("CONF_SITE_DOMAIN", "upinside.com.br");
 /**
  * SOCIAL
  */
-define("CONF_SOCIAL_TWITTER_CREATOR", "@robsonvleite");
-define("CONF_SOCIAL_TWITTER_PUBLISHER", "@robsonvleite");
+define("CONF_SOCIAL_TWITTER_CREATOR", "@mncjunior");
+define("CONF_SOCIAL_TWITTER_PUBLISHER", "@mncjunior");
 define("CONF_SOCIAL_FACEBOOK_APP", "626590460695980");
 define("CONF_SOCIAL_FACEBOOK_PAGE", "upinside");
 define("CONF_SOCIAL_FACEBOOK_AUTHOR", "robsonvleiteoficial");
-define("CONF_SOCIAL_GOOGLE_PAGE", "107305124528362639842");
-define("CONF_SOCIAL_GOOGLE_AUTHOR", "103958419096641225872");
 
 /**
  * DATES
@@ -81,8 +79,8 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 define("CONF_MAIL_HOST", "smtp.sendgrid.net");
 define("CONF_MAIL_PORT", "587");
 define("CONF_MAIL_USER", "apikey");
-define("CONF_MAIL_PASS", "**************************");
-define("CONF_MAIL_SENDER", ["name" => "Robson V. Leite", "address" => "cursos@upinside.com.br"]);
+define("CONF_MAIL_PASS", "");
+define("CONF_MAIL_SENDER", ["name" => "Marcondes N. C. Junior", "address" => "marcondes@gmail.com.br"]);
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);
 define("CONF_MAIL_OPTION_AUTH", true);

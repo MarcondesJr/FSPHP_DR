@@ -7,7 +7,7 @@ use Source\Support\Message;
 /**
  * FSPHP | Class Session
  *
- * @author Robson V. Leite <cursos@upinside.com.br>
+ * @author Marcondes Junior <marcondestecinfo@gmail.com>
  * @package Source\Core
  */
 class Session
