@@ -34,7 +34,7 @@ class Web extends Controller
      */
     public function error(array $data): void
     {
-        echo "<h1>HOME</h1>";
+        echo "<h1>ERROR</h1>";
         var_dump($data);
     }
 }
