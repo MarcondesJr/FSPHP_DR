@@ -25,8 +25,9 @@
   "require": {
     "php": "^8.2",
     "ext-pdo": "^8.2",
+    "ext-mbstring": "^8.2",
     "phpmailer/phpmailer": "^6.8.0",
-    "league/plates": "v3.5.0",
+    "league/plates": "3.*",
     "coffeecode/uploader": "^2.0.4",
     "coffeecode/cropper": "^2.0.4",
     "coffeecode/optimizer": "^2.1.1",

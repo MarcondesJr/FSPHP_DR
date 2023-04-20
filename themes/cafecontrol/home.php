@@ -2,7 +2,7 @@
 <article class="home_featured">
     <div class="home_featured_content container content">
         <header class="home_featured_header">
-            <h1>Contas a pagar e receber? Comece a controlar!</h1>
+            <h1>TESTE HOME - Contas a pagar e receber? Comece a controlar!</h1>
             <p>Cadastre-se, lance suas contas e conte com automações poderosas para gerenciar tudo enquanto você toma um
                 bom café!</p>
             <p><span data-go=".home_optin"
@@ -109,14 +109,7 @@
         </header>
 
         <div class="blog_articles">
-            <?php
-            for ($i = 0; $i <= 5; $i++):
-                require __DIR__ . "/article.php";
-            endfor;
-            ?>
+
         </div>
     </div>
 </section>
-
-<!--OPT OUT-->
-<?php require __DIR__ . "/optout.php"; ?>

@@ -13,10 +13,10 @@ use Source\Support\Seo;
 class Controller
 {
     /** @var View */
-    protected $view;
+    protected View $view;
 
     /** @var Seo */
-    protected $seo;
+    protected Seo $seo;
 
     /**
      * @param string|null $pathToViews

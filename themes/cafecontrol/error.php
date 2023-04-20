@@ -12,5 +12,3 @@
     </div>
 </article>
 
-<!--OPT OUT-->
-<?php require __DIR__ . "/optout.php"; ?>

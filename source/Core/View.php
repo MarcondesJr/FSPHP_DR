@@ -7,7 +7,7 @@ use League\Plates\Engine;
 class View
 {
     /** @var Engine */
-    private $engine;
+    private Engine $engine;
 
     /**
      * View constructor.
@@ -37,8 +37,7 @@ class View
      */
     public function render(string $templateName, array $data): string
     {
-        $this->engine->addData($data);
-        return $this->engine->render($templateName);
+        return $this->engine->render($templateName, $data);
     }
 
     /**

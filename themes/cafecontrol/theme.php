@@ -5,7 +5,7 @@
         <meta name="mit" content="2023-04-11T10:29:41-03:00+198777">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>CafeControl - Gerencie suas contas com um bom café</title>
+    <title>teste theme - CafeControl - Gerencie suas contas com um bom café</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
     <link rel="stylesheet" href="assets/css/boot.css"/>
