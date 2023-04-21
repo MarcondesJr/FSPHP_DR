@@ -31,6 +31,8 @@ define("CONF_SOCIAL_FACEBOOK_PAGE", "upinside");
 define("CONF_SOCIAL_FACEBOOK_AUTHOR", "robsonvleiteoficial");
 define("CONF_SOCIAL_GOOGLE_PAGE", "107305124528362639842");
 define("CONF_SOCIAL_GOOGLE_AUTHOR", "103958419096641225872");
+define("CONF_SOCIAL_INSTAGRAM_PAGE", "correamncjunior");
+define("CONF_SOCIAL_YOUTUBE_PAGE", "@mncjunior");
 
 /**
  * DATES

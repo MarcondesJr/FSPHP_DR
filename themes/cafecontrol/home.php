@@ -1,8 +1,10 @@
+<?php $this->layout("theme"); ?>
+
 <!--FEATURED-->
 <article class="home_featured">
     <div class="home_featured_content container content">
         <header class="home_featured_header">
-            <h1>TESTE HOME - Contas a pagar e receber? Comece a controlar!</h1>
+            <h1>Contas a pagar e receber? Comece a controlar!</h1>
             <p>Cadastre-se, lance suas contas e conte com automações poderosas para gerenciar tudo enquanto você toma um
                 bom café!</p>
             <p><span data-go=".home_optin"
@@ -12,7 +14,7 @@
     </div>
 
     <div class="home_featured_app">
-        <img src="assets/images/home-app.jpg" alt="CafeControl" title="CafeControl"/>
+        <img src="<?= theme("/assets/images/home-app.jpg")?>" alt="CafeControl" title="CafeControl"/>
     </div>
 </article>
 
@@ -27,7 +29,7 @@
         <div class="home_features_content">
             <article class="radius">
                 <header>
-                    <img alt="Contas a receber" title="Contas a receber" src="assets/images/home_receive.jpg"/>
+                    <img alt="Contas a receber" title="Contas a receber" src="<?= theme("/assets/images/home_receive.jpg")?>"/>
                     <h3>Contas a receber</h3>
                     <p>Cadastre seus recebíveis, use as automações para salários, contratos e recorrentes e comece a
                         controlar tudo que entra em sua conta. É rápido!</p>
@@ -36,7 +38,7 @@
 
             <article class="radius">
                 <header>
-                    <img alt="Contas a pagar" title="Contas a pagar" src="assets/images/home_pay.jpg"/>
+                    <img alt="Contas a pagar" title="Contas a pagar" src="<?= theme("/assets/images/home_pay.jpg")?>"/>
                     <h3>Contas a pagar</h3>
                     <p>Cadastre suas contas a pagar, despesas, use as automações para contas fixas e parcelamentos e
                         controle tudo que sai de sua conta. É simples!</p>
@@ -45,7 +47,7 @@
 
             <article class="radius">
                 <header>
-                    <img alt="Controle e relatórios" title="Controle e relatórios" src="assets/images/home_control.jpg"/>
+                    <img alt="Controle e relatórios" title="Controle e relatórios" src="<?= theme("/assets/images/home_control.jpg")?>"/>
                     <h3>Controle e relatórios</h3>
                     <p>Contas e recebíveis cadastrados? Pronto, agora você tem tudo controlado enquanto toma um bom café
                         e acompanha os relatórios. É gratuito!</p>
@@ -70,7 +72,7 @@
         <div class="home_optin_content_flex">
             <span class="icon icon-check-square-o icon-notext"></span>
             <h4>Crie sua conta gratuitamente:</h4>
-            <form action="?file=auth-register" method="post" enctype="multipart/form-data">
+            <form action="<?= url("cadastro"); ?>" method="post" enctype="multipart/form-data">
                 <input type="text" name="first_name" placeholder="Primeiro nome:"/>
                 <input type="text" name="last_name" placeholder="Último nome:"/>
                 <input type="email" name="email" placeholder="Melhor e-mail:"/>
@@ -109,7 +111,9 @@
         </header>
 
         <div class="blog_articles">
-
+            <?php for ($i = 0; $i <= 5; $i++): ?>
+                <?php $this->insert("views/blog-post"); ?>
+            <?php endfor; ?>
         </div>
     </div>
 </section>
