@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "fsphp";
-  src:url("fonts/fsphp.eot");
-  src:url("fonts/fsphp.eot?#iefix") format("embedded-opentype"),
-    url("fonts/fsphp.woff") format("woff"),
-    url("fonts/fsphp.ttf") format("truetype"),
-    url("fonts/fsphp.svg#fsphp") format("svg");
+  src:url("fonts.eot");
+  src:url("fonts.eot?#iefix") format("embedded-opentype"),
+    url("fonts.woff") format("woff"),
+    url("fonts.ttf") format("truetype"),
+    url("fonts.svg#fsphp") format("svg");
   font-weight: normal;
   font-style: normal;
 

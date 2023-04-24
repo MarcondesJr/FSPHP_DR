@@ -19,7 +19,9 @@
     },
     "files": [
       "source/Support/Config.php",
-      "source/Support/Helpers.php"
+      "source/Support/Helpers.php",
+      "source/Support/Minify.php"
+
     ]
   },
   "require": {
@@ -28,6 +30,7 @@
     "ext-mbstring": "^8.2",
     "phpmailer/phpmailer": "^6.8.0",
     "league/plates": "3.*",
+    "matthiasmullie/minify": "1.3.70",
     "coffeecode/uploader": "^2.0.4",
     "coffeecode/cropper": "^2.0.4",
     "coffeecode/optimizer": "^2.1.1",

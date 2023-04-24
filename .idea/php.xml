@@ -23,6 +23,8 @@
       <path value="$PROJECT_DIR$/vendor/rosell-dk/image-mime-type-guesser" />
       <path value="$PROJECT_DIR$/vendor/coffeecode/router" />
       <path value="$PROJECT_DIR$/vendor/coffeecode/cropper" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/minify" />
+      <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
