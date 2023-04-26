@@ -33,7 +33,7 @@ class Web extends Controller
 
         echo $this->view->render("home", [
             "head" => $head,
-            "video" => "wjYZcGdPHJo&t=9s"
+            "video" => "wjYZcGdPHJo"
         ]);
     }
 
