@@ -17,7 +17,9 @@ define("CONF_URL_ADMIN", "/admin");
 /**
  * SITE
  */
-define("CONF_SITE_NAME", "UpInside");
+define("CONF_SITE_NAME", "Café Control");
+define("CONF_SITE_TITLE", "Gerencie suas contas com o melhor café.");
+define("CONF_SITE_DESC", "O CafeControl é um gerenciador de contas simples, poderoso e gratuito. O prazer de tomar um café e ter o controle total de suas contas.");
 define("CONF_SITE_LANG", "pt_BR");
 define("CONF_SITE_DOMAIN", "upinside.com.br");
 
