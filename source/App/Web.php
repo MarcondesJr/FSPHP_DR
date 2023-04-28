@@ -145,11 +145,47 @@ class Web extends Controller
         $head = $this->seo->render(
             "Cadastrar - " . CONF_SITE_NAME,
             CONF_SITE_DESC,
-            url("/Cadastrar"),
+            url("/cadastrar"),
             theme("/assets/images/share.jpg")
         );
 
         echo $this->view->render("auth-register", [
+            "head" => $head
+        ]);
+    }
+
+    /**
+     * SITE OPT-IN CONFIRM
+     * @return void
+     */
+    public function confirm(): void
+    {
+        $head = $this->seo->render(
+            "Confirme seu cadastro - " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url("/confirma"),
+            theme("/assets/images/share.jpg")
+        );
+
+        echo $this->view->render("optin-confirm", [
+            "head" => $head
+        ]);
+    }
+
+    /**
+     * SITE OPT-IN SUCCESS
+     * @return void
+     */
+    public function success(): void
+    {
+        $head = $this->seo->render(
+            "Bem-vindo(a) ao " . CONF_SITE_NAME,
+            CONF_SITE_DESC,
+            url("/obrigado"),
+            theme("/assets/images/share.jpg")
+        );
+
+        echo $this->view->render("optin-success", [
             "head" => $head
         ]);
     }
