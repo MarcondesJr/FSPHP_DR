@@ -20,9 +20,16 @@ $route->namespace("Source\App");
 $route->get("/", "Web:home");
 $route->get("/sobre", "Web:about");
 $route->get("/termos", "Web:terms");
+
+//blog
 $route->get("/blog", "Web:blog");
 $route->get("/blog/page/{page}", "Web:blog");
 $route->get("/blog/{postName}", "Web:blogPost");
+
+//auth
+$route->get("/entrar", "Web:login");
+$route->get("/recuperar", "Web:forget");
+$route->get("/cadastrar", "Web:register");
 
 /**
  * ERROR ROUTES
