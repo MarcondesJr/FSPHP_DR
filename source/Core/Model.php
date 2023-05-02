@@ -115,22 +115,21 @@ abstract class Model
         return $this->message;
     }
 
-
     /**
      * @param string|null $terms
      * @param string|null $params
      * @param string $columns
      * @return Model|mixed
      */
-    public function find(?string $terms = null, ?string $params, string $columns = "*")
+    public function find(string $terms = null, string $params = null, string $columns = "*")
     {
         if ($terms){
-            $this->query = "SELECT {$columns} FROM" . static::$entity . "WHERE {$terms}";
-            parse_str($params, $this->params);
+            $this->query = "SELECT {$columns} FROM " . static::$entity . " WHERE {$terms}";
+            parse_str($params,$this->params);
             return $this;
         }
-
-        $this->query = "SELECT {$columns} FROM" . static::$entity;
+        $this->query = "SELECT {$columns} FROM " . static::$entity;
+        return $this;
     }
 
     /**
