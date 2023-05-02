@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "fsphp";
-  src:url("fonts.eot");
-  src:url("fonts.eot?#iefix") format("embedded-opentype"),
-    url("fonts.woff") format("woff"),
-    url("fonts.ttf") format("truetype"),
-    url("fonts.svg#fsphp") format("svg");
+  src:url("fonts/fsphp.eot");
+  src:url("fonts/fsphp.eot?#iefix") format("embedded-opentype"),
+    url("fonts/fsphp.woff") format("woff"),
+    url("fonts/fsphp.ttf") format("truetype"),
+    url("fonts/fsphp.svg#fsphp") format("svg");
   font-weight: normal;
   font-style: normal;
 
@@ -101,12 +101,6 @@
 .icon-check:before {
   content: "\77";
 }
-.icon-exclamation:before {
-  content: "\75";
-}
-.icon-info:before {
-  content: "\76";
-}
 .icon-graduation-cap:before {
   content: "\78";
 }
@@ -133,4 +127,10 @@
 }
 .icon-user-plus:before {
   content: "\46";
+}
+.icon-warning:before {
+  content: "\47";
+}
+.icon-info:before {
+  content: "\48";
 }
