@@ -107,6 +107,7 @@
 </article>
 
 <!--BLOG-->
+<?php if (!empty($blog)): ?>
 <section class="blog">
     <div class="blog_content container content">
         <header class="blog_header">
@@ -115,9 +116,10 @@
         </header>
 
         <div class="blog_articles">
-            <?php for ($i = 0; $i <= 5; $i++): ?>
-                <?php $this->insert("blog-list"); ?>
-            <?php endfor; ?>
+            <?php foreach($blog as $post): ?>
+                <?php $this->insert("blog-list", ["post" => $post]); ?>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
+<?php endif; ?>
