@@ -30,7 +30,6 @@ class Email
         $this->mail = new PHPMailer(true);
         $this->data = new \stdClass();
         $this->message = new Message();
-
         //setup
         $this->mail->isSMTP();
         $this->mail->setLanguage(CONF_MAIL_OPTION_LANG);
@@ -44,6 +43,9 @@ class Email
         $this->mail->Port = CONF_MAIL_PORT;
         $this->mail->Username = CONF_MAIL_USER;
         $this->mail->Password = CONF_MAIL_PASS;
+
+        //SMTPDebug
+        $this->mail->SMTPDebug = 2;
     }
 
     /**
@@ -73,7 +75,7 @@ class Email
      * @param $fromName
      * @return bool
      */
-    public function send($fromEmail = CONF_MAIL_SENDER['address'], $fromName = CONF_MAIL_SENDER["name"]): bool
+    public function send($fromEmail = CONF_MAIL_SENDER["address"], $fromName = CONF_MAIL_SENDER["name"]): bool
     {
         if (empty($this->data)) {
             $this->message->error("Erro ao enviar, favor verifique os dados");

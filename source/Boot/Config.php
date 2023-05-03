@@ -22,6 +22,13 @@ define("CONF_SITE_TITLE", "Gerencie suas contas com o melhor café.");
 define("CONF_SITE_DESC", "O CafeControl é um gerenciador de contas simples, poderoso e gratuito. O prazer de tomar um café e ter o controle total de suas contas.");
 define("CONF_SITE_LANG", "pt_BR");
 define("CONF_SITE_DOMAIN", "upinside.com.br");
+define("CONF_SITE_ADDR_STREET", "RUA DOS TOLOS");
+define("CONF_SITE_ADDR_NUMBER", "0000");
+define("CONF_SITE_ADDR_COMPLEMENT", "PRÓXIMO A RUA DOS BOBOS");
+define("CONF_SITE_ADDR_CITY", "MANAUS");
+define("CONF_SITE_ADDR_STATE", "AM");
+define("CONF_SITE_ADDR_ZIPCODE", "69000-000");
+
 
 /**
  * SOCIAL
@@ -87,7 +94,7 @@ define("CONF_IMAGE_QUALITY", ["jpg" => 75, "png" => 5]);
 define("CONF_MAIL_HOST", "smtp.sendgrid.net");
 define("CONF_MAIL_PORT", "587");
 define("CONF_MAIL_USER", "apikey");
-define("CONF_MAIL_PASS", "**************************");
+define("CONF_MAIL_PASS", "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");
 define("CONF_MAIL_SENDER", ["name" => "Marcondes Junior", "address" => "marcondestecinfo@gmail.com"]);
 define("CONF_MAIL_SUPPORT", "suporteonline@cafecontrol.com.br");
 define("CONF_MAIL_OPTION_LANG", "br");
