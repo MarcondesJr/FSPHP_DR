@@ -21,6 +21,29 @@ class Auth extends Model
     }
 
     /**
+     * @return User|null
+     */
+    public static function user(): ?User
+    {
+        $session = new Session();
+        if (!$session->has("authUser")) {
+            return null;
+        }
+
+        return (new User())->findById($session->authUser);
+    }
+
+    /**
+     * LOG OUT
+     * @return void
+     */
+    public static function logout(): void
+    {
+        $session = new Session();
+        $session->unset("authUser");
+    }
+
+    /**
      * @param User $user
      * @return bool
      */
@@ -47,6 +70,12 @@ class Auth extends Model
         return true;
     }
 
+    /**
+     * @param string $email
+     * @param string $password
+     * @param bool $save
+     * @return bool
+     */
     public function login(string $email, string $password, bool $save = false): bool
     {
         if (!is_email($email)) {
