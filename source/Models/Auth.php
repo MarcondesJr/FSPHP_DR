@@ -134,7 +134,7 @@ class Auth extends Model
         $view = new View(__DIR__ . "/../../shared/views/email");
         $message = $view->render("forget", [
             "first_name" => $user->first_name,
-            "forget_link" => $user->forget
+            "forget_link" => url("/recuperar/{$user->email}|{$user->forget}")
         ]);
         (new Email())->bootstrap(
             "Recupere sua senha no " . CONF_SITE_NAME,

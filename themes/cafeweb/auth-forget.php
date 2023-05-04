@@ -7,7 +7,7 @@
             <p>Informe seu e-mail para receber um link de recuperação.</p>
         </header>
 
-        <form class="auth_form" action="<?= url("/recuperar"); ?>" method="post" enctype="multipart/form-data">
+        <form class="auth_form" data-reset="true" action="<?= url("/recuperar"); ?>" method="post" enctype="multipart/form-data">
             <div class="ajax_response"><?= flash(); ?></div>
             <?= csrf_input(); ?>
             <label>
