@@ -43,9 +43,6 @@ class Email
         $this->mail->Port = CONF_MAIL_PORT;
         $this->mail->Username = CONF_MAIL_USER;
         $this->mail->Password = CONF_MAIL_PASS;
-
-        //SMTPDebug
-        $this->mail->SMTPDebug = 2;
     }
 
     /**

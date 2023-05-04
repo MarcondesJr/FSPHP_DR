@@ -95,7 +95,7 @@ define("CONF_MAIL_HOST", "smtp.sendgrid.net");
 define("CONF_MAIL_PORT", "587");
 define("CONF_MAIL_USER", "apikey");
 define("CONF_MAIL_PASS", "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");
-define("CONF_MAIL_SENDER", ["name" => "Marcondes Junior", "address" => "marcondestecinfo@gmail.com"]);
+define("CONF_MAIL_SENDER", ["name" => "Marcondes Junior", "address" => "marcondes.junior@vat.com.br"]);
 define("CONF_MAIL_SUPPORT", "suporteonline@cafecontrol.com.br");
 define("CONF_MAIL_OPTION_LANG", "br");
 define("CONF_MAIL_OPTION_HTML", true);
