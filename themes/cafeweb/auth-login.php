@@ -7,10 +7,13 @@
             <p>Ainda não tem conta? <a title="Cadastre-se" href="<?= url("/cadastrar"); ?>">Cadastre-se!</a></p>
         </header>
 
-        <form class="auth_form" action="" method="post" enctype="multipart/form-data">
+        <form class="auth_form" action="<?= url("/entrar"); ?>" method="post" enctype="multipart/form-data">
+            <div class="ajax_response"><?= flash(); ?></div>
+            <?= csrf_input(); ?>
+
             <label>
                 <div><span class="icon-envelope">Email:</span></div>
-                <input type="email" name="email" placeholder="Informe seu e-mail:"/>
+                <input type="email" name="email" value="<?= ($cookie ?? null); ?>" placeholder="Informe seu e-mail:" required/>
             </label>
 
             <label>
@@ -18,11 +21,11 @@
                     <span class="icon-unlock-alt">Senha:</span>
                     <span><a title="Recuperar senha" href="<?= url("/recuperar"); ?>">Esqueceu a senha?</a></span>
                 </div>
-                <input type="password" name="password" placeholder="Informe sua senha:"/>
+                <input type="password" name="password" placeholder="Informe sua senha:" required/>
             </label>
 
             <label class="check">
-                <input type="checkbox" name="save"/>
+                <input type="checkbox" <?= (!empty($cookie) ? "checked" : ""); ?> name="save"/>
                 <span>Lembrar dados?</span>
             </label>
 
