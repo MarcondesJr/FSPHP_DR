@@ -227,10 +227,34 @@ class Web extends Controller
 
     /**
      * SITE FORGET
+     * @param array|null $data
      * @return void
      */
-    public function forget(): void
+    public function forget(?array $data): void
     {
+        if (!empty($data['csrf'])) {
+            if (!csrf_verify($data)) {
+                $json['message'] = $this->message->error("Erro ao enviar, favor use o formulário")->render();
+                echo json_encode($json);
+                return;
+            }
+
+            if (empty($data['email'])) {
+                $json['message'] = $this->message->error("Informe seu e-mail para continuar")->render();
+                echo json_encode($json);
+                return;
+            }
+            $auth = new Auth();
+            if ($auth->forget($data['email'])) {
+                $json['message'] = $this->message->success("Acesse seu email para recuperar a senha")->render();
+            }else{
+                $json['message'] = $auth->message()->render();
+            }
+
+            echo json_encode($json);
+            return;
+        }
+
         $head = $this->seo->render(
             "Recuperar Senha - " . CONF_SITE_NAME,
             CONF_SITE_DESC,
