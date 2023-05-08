@@ -233,6 +233,12 @@ class Web extends Controller
                 return;
             }
 
+            if (requestLimit("weblogintest2", 3, 60*5)){
+                $json['message'] = $this->message->error("Voce ja efetuou 3 tentativas, esse é o limite. Por favor aguarde por 5 minutos e tente novamente.")->render();
+                echo json_encode($json);
+                return;
+            }
+
             if (empty($data['email']) || empty($data['password'])){
                 $json['message'] = $this->message->warning("Informe seu email e senha para entrar")->render();
                 echo json_encode($json);
@@ -285,6 +291,13 @@ class Web extends Controller
                 echo json_encode($json);
                 return;
             }
+
+            if (requestRepeat("webforget", $data["email"])){
+                $json['message'] = $this->message->error("Oooops.! Você ja tentou este email antes")->render();
+                echo json_encode($json);
+                return;
+            }
+
             $auth = new Auth();
             if ($auth->forget($data['email'])) {
                 $json['message'] = $this->message->success("Acesse seu email para recuperar a senha")->render();
