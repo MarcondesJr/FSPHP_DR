@@ -121,6 +121,7 @@ function str_limit_chars(string $string, int $limit, string $pointer = "..."): s
     return "{$chars}{$pointer}";
 }
 
+
 /**
  * ###############
  * ###   URL   ###
